@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0F1015;
+  text-align: center;
+font-family: 'Segoe UI', system-ui, sans-serif;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+.container {
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*moves item left ↔ right to middle*/
+  align-items: center; /*moves item top ↕ bottom to middle*/
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*moves item left ↔ right to middle*/
+  align-items: center; /*moves item top ↕ bottom to middle*/
+  gap: 1.8vmin;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1.25rem; /* 16px */
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border line */
+  border: none;
+  /* Deep, layered neon shadow */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 
+              inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  font-size: 8vmin;
+  font-weight: 800;
+ color: #00F5D4; /* Electric Cyan default */
+  background-color: #1A1C23; /* Sleek matte dark grey */
+  transition: all 0.4s ease;
+}
+/* Cool Hover Effect for Interactivity */
+.box:hover {
+background-color: #222530;
+  border-color: rgba(0, 245, 212, 0.4);
+  /* The tile literally glows neon cyan when you hover over it */
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.25);
+  transform: scale(1.03); /* Smooth micro-pop effect */
+}
+#restbutton {
+ padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Clean arcade vibe */
+  
+  background-color: #7B2CBF; /* Deep Royal Purple */
+  color: #FFFFFF;
+  border-radius: 2rem; /* Fully pill-shaped button */
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
+  transition: all 0.2s ease;}
+#restbutton:hover {
+background-color: #9D4EDD; /* Lighter violet glow on hover */
+  box-shadow: 0 6px 20px rgba(157, 78, 221, 0.6);
+  transform: translateY(-1px);
+}
+/* 5. Winner Message Container (Neon Theme) */
+.msg-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 30vmin;
+  /* display: none; */ /* Uncomment this when your JS is ready to control it */
+}
+
+#msg {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00F5D4; /* Matching Electric Cyan */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* Soft neon glow on the text */
+  text-shadow: 0 0 10px rgba(0, 245, 212, 0.6),
+               0 0 20px rgba(0, 245, 212, 0.3);
+}
+
+#newbutton {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  height: auto;
+  background-color: #7B2CBF; /* Deep Royal Purple */
+  color: #FFFFFF;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
+  transition: all 0.2s ease;
+}
+
+#newbutton:hover {
+  background-color: #9D4EDD; /* Vibrant purple pop */
+  box-shadow: 0 6px 20px rgba(157, 78, 221, 0.7);
+  transform: translateY(-2px);
+}
+.hide{
+  display:none;
+}
